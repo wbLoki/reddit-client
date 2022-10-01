@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="App-header">
+      <div className="App-header overflow-hidden">
         <Feed />
       </div>
     </div>

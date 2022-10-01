@@ -1,10 +1,4 @@
-.logo-text {
-    color: #FF4C29;
-    font-weight: 700;
-}
-
 .reddit-logo {
-    height: 4vmin;
     pointer-events: none;
     padding-right: 2vmin;
 }
@@ -12,7 +6,7 @@
 .header {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
     box-shadow: inset 0px 33px 25px 0 #000, 
     inset 0 66px 15px 0px #232d3b,
