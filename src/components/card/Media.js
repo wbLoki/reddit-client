@@ -5,7 +5,11 @@ export default function Media(props) {
   const { url, media, post_hint, selftext } = props;
   switch (post_hint) {
     case "image":
-      return <img src={url} alt="sub" />;
+      return (
+        <div className="w-full">
+          <img src={url} alt="sub" className="m-auto" />
+        </div>
+      );
     case "hosted:video":
       return (
         <div className="w-full">
@@ -20,8 +24,8 @@ export default function Media(props) {
     case "link":
       return (
         <div className="flex justify-evenlyn mx-2 my-1">
-          <a className="text-xs text-left mr-6 text-sky-400 flex">
-            <p className="underline truncate max-w-xs">{url}</p>
+          <a className="text-xs text-left mr-6 text-sky-400 flex  items-end">
+            <p className="underline truncate max-w-xs">{url} </p>
             <FaExternalLinkAlt />
           </a>
           <div> </div>

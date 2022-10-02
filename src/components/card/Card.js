@@ -1,10 +1,6 @@
 import "./Card.css";
-import {
-  FaRegArrowAltCircleDown,
-  FaRegArrowAltCircleUp,
-  FaShareAlt,
-  FaCommentAlt,
-} from "react-icons/fa";
+import { TbArrowBigTop, TbArrowBigDown, TbUpload } from "react-icons/tb";
+import { VscComment } from "react-icons/vsc";
 import Media from "./Media";
 import PostDateCalculator from "../../features/PostDateCalculator";
 import RoundingNumbers from "../../features/RoundingNumbers";
@@ -65,21 +61,22 @@ export function Card(props) {
             selftext={selftext}
           />
         </div>
-        {/* COMMENTS AND SHARE */}
-        <div className="flex flex-row items-center text-grey text-sm h-10">
+        {/* VOTE COUNT */}
+        <div className="flex flex-row items-center text-grey text-xs h-10">
           <div className="flex">
             <button className="upvote misc">
-              <FaRegArrowAltCircleUp className="icon" />
+              <TbArrowBigTop className="icon" />
             </button>
             <span className="mx-1">{RoundingNumbers(votes)}</span>
             <button className="downvote misc">
-              <FaRegArrowAltCircleDown className="icon" />
+              <TbArrowBigDown className="icon" />
             </button>
           </div>
+          {/* COMMENTS AND SHARE */}
           <div className="flex px-2">
             <div className="p-2 hover:bg-black" onClick={goTo}>
               <button href="#" className="misc">
-                <FaCommentAlt className="icon" />
+                <VscComment className="icon" />
                 <span className="mx-2">
                   {RoundingNumbers(numberOfComments)} Comments
                 </span>
@@ -87,7 +84,7 @@ export function Card(props) {
             </div>
             <div className="p-2 hover:bg-black">
               <button href="#" className="misc">
-                <FaShareAlt className="icon" />
+                <TbUpload className="icon" />
                 <span className="mx-2">Share</span>
               </button>
             </div>
