@@ -16,7 +16,7 @@ export function Feed() {
       params: { limit: limit, after: lastID },
     }).then((res) => {
       setIsLoading(false);
-      console.log(res);
+      // console.log(res.data.data.children);
       setPosts(res.data.data.children);
     });
   }, [limit]);
