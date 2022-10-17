@@ -1,17 +1,15 @@
 # Reddit Lite
 
-=============
-
 Reddit Lite will display posts fetched from Reddit api and display them.
 
 ## Features
-
----
 
 ### Current features:
 
 - Display Reddit posts from the r/Popular sub.
 - Click on a specific post to open the original post on a new tab.
+
+---
 
 ### Future features:
 
@@ -21,8 +19,6 @@ Reddit Lite will display posts fetched from Reddit api and display them.
 - Make posts.
 
 ## Installation
-
----
 
 1. In your Terminal, run `npm install`.
 2. Then `npm start`, to run the app in the development mode.
