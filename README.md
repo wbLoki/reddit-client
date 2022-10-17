@@ -9,8 +9,6 @@ Reddit Lite will display posts fetched from Reddit api and display them.
 - Display Reddit posts from the r/Popular sub.
 - Click on a specific post to open the original post on a new tab.
 
----
-
 ### Future features:
 
 - Display posts from selected subs.
